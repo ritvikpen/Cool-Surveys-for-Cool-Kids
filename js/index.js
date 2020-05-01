@@ -22,4 +22,5 @@ function submit_dat(){
     $("#health").val(),
     $("#survey_data").val()
   );
+  alert("Your data has been submitted. Thank You!");
 }
