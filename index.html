@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="UTF-8">
+    <title>Cool Surveys for Cool Kids</title>
+    <link rel="stylesheet" type = "text/css" href="css/materialize.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	
+	<body class="container">
+    
+      <h1 class="center"> Cool Surveys for Cool Kids</h1>
+      <form class="col s12">
+        <div class="input-field col s12 l6">
+          <input placeholder="Name" id="user_name" type="text" class="validate">
+        </div>
+        <div class="input-field col s12 l6">
+          <input placeholder="Age" id="age" type="text" class="validate">
+        </div>
+        <div class="input-field col s12 l6">
+          <input placeholder="Gender" id="gender" type="text" class="validate">
+        </div>
+        <div class="input-field col s12 l6">
+          <input placeholder="Marital Status" id="married" type="text" class="validate">
+        </div>
+        <div class="input-field col s12 l6">
+          <input placeholder="Employment" id="job" type="text" class="validate">
+        </div>
+        <div class="input-field col s12 l6">
+          <input placeholder="Health Conditions" id="health" type="text" class="validate">
+        </div>
+        <div class="input-field col s12 l6">
+          <input placeholder="Survey Data" id="survey_data" type="text" class="validate">
+        </div>
+      </form>
+
+    <div class="center">
+      <button class="btn waves-effect waves-light" type="submit" name="action" onclick="submit_dat()">Submit
+      </button>
+    </div> 
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+    <!-- This is bad, but for proto just use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCq6cUOXrmNqhiZmFYwS29r6HJXgyBsqjE",
+        authDomain: "gael-scout-journal.firebaseapp.com",
+        databaseURL: "https://gael-scout-journal.firebaseio.com",
+        projectId: "gael-scout-journal",
+        storageBucket: "gael-scout-journal.appspot.com",
+        messagingSenderId: "758372694901",
+        appId: "1:758372694901:web:48a355b6b69d1604ab313c",
+        measurementId: "G-CZ3HCE67SK"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+    <script src="js/index.js"></script>
+	</body>
+
+</html>
